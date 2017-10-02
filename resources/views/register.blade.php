@@ -47,13 +47,17 @@ table {
   box-shadow: 5px 5px 5px grey;
   width: 50%;
 }
+.modal1 {
+    display: none;
+  }
 </style>
 
 
 
 <body>
 <br><br><br><br></br></br></br></br>
-<table align = "center">
+<div id="myDIV">
+<table class="table" align = "center">
   <tr>
     <th>
       <div align = "center">
@@ -64,7 +68,7 @@ table {
   <tr>
     <td>
   <div align = "center">
-  <button class= "button" onClick="document.getElementById('id02').style.display='block'" style="width:350px">
+  <button class= "button" onclick="document.getElementById('id02').style.display='block'" style="width:350px">
   <div align="center">Log In</div>
   </button>
   </div>
@@ -100,18 +104,17 @@ table {
     </div>
   </form>
 </div>
-
 <div id="id02" class="modal" onclick="closeWindow()">
-    <span onClick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
-  <form id="login-form" class="modal-content animate" method="post" action="/create" >
+   <span onClick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+  <form id="reg-form" class="modal-content animate" method="post" action="/create" >
     <div class="container">
-              <input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>">
-            <label><b>Username</b></label>
+      <h1>Log In</h1>
+      <label><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="username" required>
       <label><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="password" id="pass" required>
-        <div class="clearfix">
-        <button class="signupbtn" onclick="checkPass()" style="background-color:#1C1C1C">Log In</button>
+          <div class="clearfix">
+        <button class="loginpbtn" onclick="checkPass()" style="background-color:#1C1C1C">Log In</button>
       </div>
     </div>
   </form>
@@ -119,8 +122,8 @@ table {
 <br></br>
 </td>
 </tr>
-</table
-
+</table>
+</div>
 
 
 </body>
