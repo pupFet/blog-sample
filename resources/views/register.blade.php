@@ -14,7 +14,9 @@
 
 <style>
 
-<body>
+body{
+
+}
 
 table, th, td {
 
@@ -194,5 +196,4 @@ table {
 
 </body>
 
-</html>
-
+</htm
