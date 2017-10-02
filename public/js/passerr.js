@@ -1,35 +1,34 @@
+
     
+// $("#btnStart").click(function(){
+//     alert("Text:");
+// });
+    
+   
+
+
+
     function checkPass(){  
-    //  var passwordAuth = document.freg-form.pass.value;
-    //  var passwordRep= document.freg-form.rep_pass.value;
-    //     var p1 = document.getElementById("pass").value;
-    //     var p2 = document.getElementById("rep_passpass").value;
+        var pass_auth = document.getElementById("pass").value;
+        var pass_repeat = document.getElementById("rep_pass").value;
+        var uname = document.getElementById("username").value
+        console.log(pass_auth);
+        console.log(pass_repeat);
+        console.log(1);  
 
-    // if(p1 != p2)
-    // {
-    //  alert("Password didn't match");
-        
-    // }else{
-    //     alert("Account Successfully Created");
-        
-    // }
-    console.log(1);    
+        if (pass_auth != pass_repeat){
+
+            alert("Password didn't match!!");
+            return false;
+        }
+        else{
+            alert("Account Created: "+uname);
+            return true;
+        }
+
+    
+
    }    
-    // When the user clicks anywhere outside of the modal, close it
-    // var modal = document.getElementById('id01');
-    // window.onclick = function(event) 
-    // {
-    // if (event.target == modal) 
-    //     {
-    //     modal.style.display = "none";
-    //     }
-    // }
-
-    // window.addEventListener("click",function(){
-    //     console.log(5);
-    //     console.log(modal);
-    //     modal.style.display = "none";
-    // })
 
     function closeWindow(){
 
