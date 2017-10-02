@@ -53,7 +53,7 @@ table {
   <tr>
     <th>
       <div align = "center">
-      <h1><b>Welcome to our BLOG!</b></h1>
+      <h1><b>Welcome to our BLOG!zxc</b></h1>
     </div>
     </td>
   </tr>
