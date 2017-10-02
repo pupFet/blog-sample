@@ -6,13 +6,70 @@
 <!--  // <script type="text/javascript" src="/var/www/html/Larv/public/js/passerr.js"></script> -->
 <script src="{{ asset('/js/passerr.js') }}"></script>
 </head>
+<style>
+table{}
+table, th, td {
+    border-collapse: collapse;
+    background-color: #F0F0F0;
+    width: 30%;
+    text-align: left;
+    border-radius: 25px;
+}
+table{
+  box-shadow: 5px 5px 5px grey;
+}
+th {
+    padding: 40px;
+}
+h1{
+   font-family: "Courier"
+}
+
+table {
+    border-spacing: 15px;
+}
+.button {
+    background-color: #656565;
+}
+.button2 {
+    background-color: #1C1C1C;
+}
+.cancelbtn{
+  background-color: #656565;
+}
+.signupbtn{
+  background-color: #1C1C1C;
+}
+</style>
+
+
+
 <body>
+<br><br><br><br></br><</br></br></br>
+<table align = "center">
+  <tr>
+    <th>
+      <div align = "center">
+      <h1><b>Welcome to our BLOG!</b></h1>
+    </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+  <div align = "center">
+  <button class= "button" onClick="document.getElementById('').style.display='block'" style="width:350px">
+  <div align="center">Log In</div>
+  </button>
+  </div>
+</td></tr>
 
-<h2 align="center">Sign Up Here!</h2>
-
-<button onClick="document.getElementById('id01').style.display='block'" style="width:auto;">
+<tr>
+  <td>
+<div align = "center">
+<button class= "button2" onClick="document.getElementById('id01').style.display='block'" style="width:350px">
 <div align="center">Sign Up</div>
 </button>
+</div>
 
 <div id="id01" class="modal" onclick="closeWindow()">
   <span onClick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
@@ -30,13 +87,16 @@
       <label><b>Repeat Password</b></label>
        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="rep_pass" required>
       <div class="clearfix">
-        <button type="button" onClick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <button class="signupbtn" onclick="checkPass()">Sign Up</button>
+        <button type="button" onClick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="background-color:#656565">Cancel</button>
+        <button class="signupbtn" onclick="checkPass()" style="background-color:#1C1C1C">Sign Up</button>
       </div>
     </div>
   </form>
 </div>
-
+<br></br>
+</td>
+</tr>
+</table
 
 
 

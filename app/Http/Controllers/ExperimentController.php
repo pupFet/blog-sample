@@ -7,7 +7,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 
-    
+
 class ExperimentController extends Controller
 {
     //veiw
@@ -21,7 +21,7 @@ class ExperimentController extends Controller
 	public function insert(Request $request){
 	$auth_pass = $request->input('password');
 	$rep_pass = $request->input('psw-repeat');
-	
+
 	//set connections
 	$conn = mysqli_connect("localhost", "root", "password", "blog");
 	$query = "SELECT user_id FROM users";
@@ -55,4 +55,3 @@ class ExperimentController extends Controller
 
 	}
 }
-
