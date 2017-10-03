@@ -7,21 +7,26 @@
 <script src="{{ asset('/js/passerr.js') }}"></script>
 </head>
 <style>
-body{
 
+body{
+  background-image: url("/img/bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
 }
 table, th, td {
     border-collapse: collapse;
-    background-color: #F0F0F0;
+    background-color: #000000;
     width: 30%;
     text-align: left;
-    border-radius: 25px;
+    border-radius: 45px;
 }
 table{
-  box-shadow: 3px 3px 3px grey;
+  box-shadow: 5px 5px 5px grey;
+   opacity: .75;
 }
 th {
     padding: 40px;
+    color: white;
 }
 h1{
    font-family: "Courier"
@@ -32,9 +37,11 @@ table {
 }
 .button {
     background-color: #656565;
+    border-radius: 25px;
 }
 .button2 {
-    background-color: #1C1C1C;
+    background-color: #373737;
+    border-radius: 25px;
 }
 .cancelbtn{
   background-color: #656565;
@@ -46,10 +53,10 @@ table {
   border-radius: 15px;
   box-shadow: 5px 5px 5px grey;
   width: 50%;
+  background-image: url("/img/bg.jpg");
 }
-.modal1 {
-    display: none;
-  }
+
+
 </style>
 
 
@@ -61,7 +68,7 @@ table {
   <tr>
     <th>
       <div align = "center">
-      <h1><b>WELCOME</b></h1>
+      <h1><b>WELCOME to our BLOG!</b></h1>
     </div>
     </td>
   </tr>
@@ -69,7 +76,7 @@ table {
     <td>
   <div align = "center">
   <button class= "button" onclick="document.getElementById('id02').style.display='block'" style="width:350px">
-  <div align="center">Log In</div>
+  <div align="center"><b>Log In</b></div>
   </button>
   </div>
 </td></tr>
@@ -78,7 +85,7 @@ table {
   <td>
 <div align = "center">
 <button class= "button2" onClick="document.getElementById('id01').style.display='block'" style="width:350px">
-<div align="center">Sign Up</div>
+<div align="center"><b>Sign Up</b></div>
 </button>
 </div>
 
@@ -86,6 +93,8 @@ table {
   <span onClick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
   <form id="reg-form" class="modal-content animate" method="post" action="/create" >
     <div class="container">
+      <img src="/img/icon.png"height="45" width="45"align="right">
+      <h1>Register Now!</h1>
         <input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>">
       <label><b>Last Name</b></label>
         <input type="text" placeholder="Enter Last Name" name="lastname" required>
@@ -108,6 +117,7 @@ table {
    <span onClick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
   <form id="reg-form" class="modal-content animate" method="post" action="/create" >
     <div class="container">
+      <img src="/img/icon.png"height="45" width="45"align="right">
       <h1>Log In</h1>
       <label><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="username" required>

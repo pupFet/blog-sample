@@ -23,7 +23,7 @@ class ExperimentController extends Controller
 	$rep_pass = $request->input('psw-repeat');
 
 	//set connections
-	$conn = mysqli_connect("localhost", "root", "password", "blog");
+	$conn = mysqli_connect("localhost", "root", "", "blog");
 	$query = "SELECT user_id FROM users";
 	$result = mysqli_query($conn, $query);
 	$row = mysqli_fetch_array($result, MYSQLI_ASSOC) ;
