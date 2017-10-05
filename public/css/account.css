@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-image: url("/img/bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+a {
+   color: black;
+   text-decoration: none;
+}
+a.btn{
+  color: white;
+  text-decoration: none;
+}
+
+table.form{
+  background: #1C1C1C;
+  width: 40%;
+  border-radius: 15px;
+  opacity: 0.75;
+  box-shadow: 5px 5px 5px grey;
+
+}
+table.register{
+  background: #1C1C1C;
+  width: 40%;
+  border-radius: 15px;
+  opacity: 0.75;
+  box-shadow: 5px 5px 5px grey;
+
+}
+h1{
+  font-family: "Courier";
+  color: #FFFFFF;
+}
+
+h2{
+  font-family: "Courier";
+  color: #FFFFFF;
+}
+h3{
+  font-family: "Courier";
+  color: #FFFFFF;
+}
+h4{
+  font-family: "Courier";
+  color: #FFFFFF;
+}
+div{
+  color:white;
+}
+div.form-group{
+  color:white;
+}
+input{
+  border-radius: 10px;
+  padding: 5px 10px;
+  line-height: 10px;
+}
+.btn{
+  width:530px;
+  height: 60px;
+  background-color: #4F4F4F;
+  border: none;
+
+}
+.btn1{
+  width:530px;
+  height: 40px;
+  background-color: #4F4F4F;
+  border: none;
+  font-size: 25px;
+  font-family: "Courier";
+  color: #FFFFFF;
+
+}

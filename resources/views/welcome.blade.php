@@ -128,7 +128,7 @@ input[type=text]:focus {
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
     <div>
-      <a href="http://127.0.0.1:8000/register">home</a>
+      <a href="http://127.0.0.1:8000">home</a>
     </div>
     <div>
       <a href="#">blogs</a>
