@@ -1,3 +1,18 @@
+.welcomeUsr {
+    color: #111111;
+    font-weight: bold;
+    position: absolute;
+    right: 3%;
+    top: 5%;
+}
+
+.userHeader {
+    height: 20%;
+    margin-bottom: -20px;
+    padding-bottom: 10px;
+    color: #111111;
+}
+
 .pageContent {
     width: 70%;
     height: 120%;
@@ -33,7 +48,7 @@
 }
 
 .ShowButton {
-    background: #818181;
+    background: #000000;
     border-radius: 30px;
     width: 120px;
     margin-left: -20px;

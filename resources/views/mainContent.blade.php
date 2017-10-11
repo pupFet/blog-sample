@@ -28,15 +28,28 @@
 </div>
 
 <!-- Use any element to open the sidenav -->
+
 <div class="showButton">
 <span onclick="openNav()"><i class="material-icons shoW_bar_icon">chevron_right</i></span>
 </div>
+
+
+
+
 <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
 <div id="main" class="pageContent">
-
-<h1>Welcome!: "{{ Auth::user()->username }}"</h1>
+  
+<h2 class="header-content-text">Behat - A php framework for autotesting your business.</h2> 
+<h4 class="semi-header-text"> A step-by-step tutorial on running Automation testing on your website using Behat.</h4> 
+    <div id="behat-header" class="behat-image-header">
+    <img src="/img/behat.png">
+    </div>
+  <div id="intro-content"  class="light-text-content">
+    <p><span class="introText ">Quick Introduction to Behat</span> - Behat is a Behavioral Deriven Development(BDD) tool used for website automation.</p>
+  </div>
 </div> 
 @endsection
 </body>
-
+<!--Create Comment Section here for later use-->
+<!--NOTE: Images used in here is not yet official-->
 </html>

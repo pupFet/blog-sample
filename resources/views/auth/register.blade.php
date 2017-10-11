@@ -11,7 +11,7 @@
                 <div class="panel-heading"><h1>&nbsp;Register</h1></div>
 
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('register') }}">
+                    <form class="form-horizontal" method="POST" action="{{ route('register') }}" onsubmit="return regOK()">
                         {{ csrf_field() }}
                       <div>
                         <div class="form-group{{ $errors->has('firstname') ? ' has-error' : '' }}">

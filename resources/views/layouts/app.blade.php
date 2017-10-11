@@ -11,7 +11,9 @@
     <title>{{ config('app.name', 'Blog') }}</title>
 
     <!-- Styles -->
+    <script src="{{ asset('/js/appFunc.js') }}"></script>
     <link href="{{ asset('css/account.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/content.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -33,48 +35,29 @@
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                        &nbsp;
-                    </ul>
+                   
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
+                   
                         <!-- Authentication Links -->
                         @guest
-                        <!-- <a href="{{ route('login') }}">Login</a>
-                        &nbsp;&nbsp;&nbsp;
-                        <a href="{{ route('register') }}">Register</a> -->
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 
                         @else
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-<!-- 
-                                <ul class="dropdown-menu" role="menu">
-                                    <li>
-                                        <a href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Logout
-                                        </a>
-
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
-                                    </li>
-                                </ul> -->
-                            </li>
+                            
+                        <p class="welcomeUsr">Welcome! <span class="uname-right">{{ Auth::user()->username }}</span></p>
+                               
                         @endguest
-                    </ul>
+                    
+                    
                 </div>
             </div>
         </nav>
-
+            
         @yield('content')
     </div>
 
     <!-- Scripts -->
+      
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

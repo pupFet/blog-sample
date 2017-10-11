@@ -5,3 +5,5 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.marginLeft = "-300px";
 }
+
+document.getElementById("intro-content").style.fontFamily = "Nunito-regular";

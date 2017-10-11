@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Arvo-Regular';
+    src: url('../fonts/Arvo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nunito-regular';
+    src: url('../fonts/Nunito-Regular.ttf') format('truetype');
+}
+
+.header-content-text {
+    color: #111111;
+    font-family: 'Arvo-Regular';
+}
+
+.semi-header-text {
+    color: #111111;
+    font-family: 'Arvo-Regular';
+    margin-left: -3px;
+}
+
+.behat-image-header {
+    margin-left: 225px;
+    padding: 20px;
+}
+
+.uname-right {
+    font-style: italic;
+    font-weight: 300px;
+}
+
+.light-text-content {
+    font-family: 'Nunito-regular' !important;
+    color: #000000;
+    width: 78%;
+    margin-left: 1.2px;
+}
+
+.introText {
+    color: #000000;
+    font-weight: bold;
+}
