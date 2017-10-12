@@ -13,7 +13,7 @@
   <p align="center">{{ Auth::user()->firstname }} {{ Auth::user()->lastname }}</p>
   <ul>
   <li><a href="#"><p class="ListFonts">Profile</p></a></li>
-  <li><a href="#"><p class="ListFonts">Create a new blog</p></a></li>
+  <li><a href="{{ route('blog') }}"><p class="ListFonts">Create a new blog</p></a></li>
   <li><a href="#"><p class="ListFonts">About Us</p></a></li>
   <li>
     <a href="{{ route('logout') }}"
@@ -45,7 +45,9 @@
     <img src="/img/behat.png">
     </div>
   <div id="intro-content"  class="light-text-content">
-    <p><span class="introText ">Quick Introduction to Behat</span> - Behat is a Behavioral Deriven Development(BDD) tool used for website automation.</p>
+    <p><span class="introText ">Quick Introduction to Behat</span> - Behat is a Behavioral Deriven Development(BDD) tool used for website automation testing. 
+    This means it is a human-readable stories that can easily understand by non-technical people with this collaboration with others can be easily managed.</p>
+
   </div>
 </div> 
 @endsection
